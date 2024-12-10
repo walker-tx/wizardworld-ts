@@ -1,0 +1,8 @@
+overlay: 1.0.0
+info:
+  title: Overlay before.json => openapi.json
+  version: 0.0.0
+actions:
+  - target: $
+    update:
+      "servers": [{ "url": "https://wizardworldapi.azurewebsites.net" }]

@@ -1,0 +1,37 @@
+speakeasyVersion: 1.453.0
+sources:
+    WizardWorldApi:
+        sourceNamespace: wizard-world-api
+        sourceRevisionDigest: sha256:ef27c75ec2fa1c47049bd3ef230bb727367f0dd8cb870e78e1bfb1b3ffb9a8e1
+        sourceBlobDigest: sha256:39660a68216fa20ad5ec6227dabb8597771ca1690b8e24eaa66c8c032a64996b
+        tags:
+            - latest
+            - 1.0.1
+targets:
+    wizard-world:
+        source: WizardWorldApi
+        sourceNamespace: wizard-world-api
+        sourceRevisionDigest: sha256:ef27c75ec2fa1c47049bd3ef230bb727367f0dd8cb870e78e1bfb1b3ffb9a8e1
+        sourceBlobDigest: sha256:39660a68216fa20ad5ec6227dabb8597771ca1690b8e24eaa66c8c032a64996b
+        codeSamplesNamespace: wizard-world-api-typescript-code-samples
+        codeSamplesRevisionDigest: sha256:b9c042a91c97a0e0437b1024de30e0b9ae5d9c970629aa3a0c85d86a3df070b5
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        WizardWorldApi:
+            inputs:
+                - location: https://wizard-world-api.herokuapp.com/swagger/v1/swagger.json
+            overlays:
+                - location: overlay.yaml
+            output: openapi-combined.yaml
+            registry:
+                location: registry.speakeasyapi.dev/walker/walker/wizard-world-api
+    targets:
+        wizard-world:
+            target: typescript
+            source: WizardWorldApi
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/walker/walker/wizard-world-api-typescript-code-samples
+                blocking: false

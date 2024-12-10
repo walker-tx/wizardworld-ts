@@ -1,0 +1,239 @@
+lockVersion: 2.0.0
+id: 849a1d31-9a98-472e-a5e2-0a46c7f34d1d
+management:
+  docChecksum: 5d00ab440a9752f79942c336551d10e3
+  docVersion: 1.0.1
+  speakeasyVersion: 1.453.0
+  generationVersion: 2.472.1
+  releaseVersion: 0.0.3
+  configChecksum: 3a0af1cfc1cfe6165442083bb0212eaf
+features:
+  typescript:
+    acceptHeaders: 2.81.2
+    additionalDependencies: 0.1.0
+    core: 3.18.8
+    defaultEnabledRetries: 0.1.0
+    devContainers: 2.90.0
+    enumUnions: 0.1.0
+    envVarSecurityUsage: 0.1.2
+    globalSecurityCallbacks: 0.1.0
+    globalServerURLs: 2.82.4
+    nullables: 0.1.0
+    responseFormat: 0.2.3
+    retries: 2.83.0
+    sdkHooks: 0.2.0
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .eslintrc.cjs
+  - .gitattributes
+  - .npmignore
+  - CONTRIBUTING.md
+  - FUNCTIONS.md
+  - RUNTIMES.md
+  - USAGE.md
+  - docs/lib/utils/retryconfig.md
+  - docs/models/components/elixirdifficulty.md
+  - docs/models/components/elixirdto.md
+  - docs/models/components/elixirinventordto.md
+  - docs/models/components/feedbacktype.md
+  - docs/models/components/gethousesquery.md
+  - docs/models/components/housedto.md
+  - docs/models/components/househeaddto.md
+  - docs/models/components/ingredientdto.md
+  - docs/models/components/sendfeedbackcommand.md
+  - docs/models/components/spelldto.md
+  - docs/models/components/spelllight.md
+  - docs/models/components/spelltype.md
+  - docs/models/components/traitdto.md
+  - docs/models/components/traitname.md
+  - docs/models/components/unit.md
+  - docs/models/components/wizarddto.md
+  - docs/models/components/wizardelixirdto.md
+  - docs/models/operations/getelixirsidrequest.md
+  - docs/models/operations/getelixirsidresponse.md
+  - docs/models/operations/getelixirsrequest.md
+  - docs/models/operations/getelixirsresponse.md
+  - docs/models/operations/gethousesidrequest.md
+  - docs/models/operations/gethousesidresponse.md
+  - docs/models/operations/gethousesrequest.md
+  - docs/models/operations/gethousesresponse.md
+  - docs/models/operations/getingredientsidrequest.md
+  - docs/models/operations/getingredientsidresponse.md
+  - docs/models/operations/getingredientsrequest.md
+  - docs/models/operations/getingredientsresponse.md
+  - docs/models/operations/getspellsidrequest.md
+  - docs/models/operations/getspellsidresponse.md
+  - docs/models/operations/getspellsrequest.md
+  - docs/models/operations/getspellsresponse.md
+  - docs/models/operations/getwizardsidrequest.md
+  - docs/models/operations/getwizardsidresponse.md
+  - docs/models/operations/getwizardsrequest.md
+  - docs/models/operations/getwizardsresponse.md
+  - docs/models/operations/postfeedbackresponse.md
+  - docs/sdks/elixirs/README.md
+  - docs/sdks/feedback/README.md
+  - docs/sdks/houses/README.md
+  - docs/sdks/ingredients/README.md
+  - docs/sdks/spells/README.md
+  - docs/sdks/wizards/README.md
+  - docs/sdks/wizardworld/README.md
+  - jsr.json
+  - package.json
+  - src/core.ts
+  - src/funcs/elixirsGetElixirs.ts
+  - src/funcs/elixirsGetElixirsId.ts
+  - src/funcs/feedbackPostFeedback.ts
+  - src/funcs/housesGetHouses.ts
+  - src/funcs/housesGetHousesId.ts
+  - src/funcs/ingredientsGetIngredients.ts
+  - src/funcs/ingredientsGetIngredientsId.ts
+  - src/funcs/spellsGetSpells.ts
+  - src/funcs/spellsGetSpellsId.ts
+  - src/funcs/wizardsGetWizards.ts
+  - src/funcs/wizardsGetWizardsId.ts
+  - src/hooks/hooks.ts
+  - src/hooks/index.ts
+  - src/hooks/types.ts
+  - src/index.ts
+  - src/lib/base64.ts
+  - src/lib/config.ts
+  - src/lib/dlv.ts
+  - src/lib/encodings.ts
+  - src/lib/env.ts
+  - src/lib/files.ts
+  - src/lib/http.ts
+  - src/lib/is-plain-object.ts
+  - src/lib/logger.ts
+  - src/lib/matchers.ts
+  - src/lib/primitives.ts
+  - src/lib/retries.ts
+  - src/lib/schemas.ts
+  - src/lib/sdks.ts
+  - src/lib/security.ts
+  - src/lib/url.ts
+  - src/models/components/elixirdifficulty.ts
+  - src/models/components/elixirdto.ts
+  - src/models/components/elixirinventordto.ts
+  - src/models/components/feedbacktype.ts
+  - src/models/components/gethousesquery.ts
+  - src/models/components/housedto.ts
+  - src/models/components/househeaddto.ts
+  - src/models/components/index.ts
+  - src/models/components/ingredientdto.ts
+  - src/models/components/sendfeedbackcommand.ts
+  - src/models/components/spelldto.ts
+  - src/models/components/spelllight.ts
+  - src/models/components/spelltype.ts
+  - src/models/components/traitdto.ts
+  - src/models/components/traitname.ts
+  - src/models/components/unit.ts
+  - src/models/components/wizarddto.ts
+  - src/models/components/wizardelixirdto.ts
+  - src/models/errors/apierror.ts
+  - src/models/errors/httpclienterrors.ts
+  - src/models/errors/index.ts
+  - src/models/errors/sdkvalidationerror.ts
+  - src/models/operations/getelixirs.ts
+  - src/models/operations/getelixirsid.ts
+  - src/models/operations/gethouses.ts
+  - src/models/operations/gethousesid.ts
+  - src/models/operations/getingredients.ts
+  - src/models/operations/getingredientsid.ts
+  - src/models/operations/getspells.ts
+  - src/models/operations/getspellsid.ts
+  - src/models/operations/getwizards.ts
+  - src/models/operations/getwizardsid.ts
+  - src/models/operations/index.ts
+  - src/models/operations/postfeedback.ts
+  - src/sdk/elixirs.ts
+  - src/sdk/feedback.ts
+  - src/sdk/houses.ts
+  - src/sdk/index.ts
+  - src/sdk/ingredients.ts
+  - src/sdk/sdk.ts
+  - src/sdk/spells.ts
+  - src/sdk/wizards.ts
+  - src/types/blobs.ts
+  - src/types/constdatetime.ts
+  - src/types/enums.ts
+  - src/types/fp.ts
+  - src/types/index.ts
+  - src/types/operations.ts
+  - src/types/rfcdate.ts
+  - src/types/streams.ts
+  - tsconfig.json
+examples:
+  get_/Elixirs:
+    speakeasy-default-get-/elixirs:
+      responses:
+        "200":
+          text/plain: "<value>"
+  get_/Elixirs/{id}:
+    speakeasy-default-get-/elixirs/{id}:
+      parameters:
+        path:
+          id: "fc6dfa2e-eb55-4b41-8fcd-687fb1ce4576"
+      responses:
+        "200":
+          text/plain: "<value>"
+  post_/Feedback:
+    speakeasy-default-post-/feedback:
+      responses:
+        "200":
+          text/plain: "lumen"
+  get_/Houses:
+    speakeasy-default-get-/houses:
+      responses:
+        "200":
+          text/plain: "<value>"
+          text/json: []
+  get_/Houses/{id}:
+    speakeasy-default-get-/houses/{id}:
+      parameters:
+        path:
+          id: "2a33109f-7dad-46a7-b0cf-49f5682dd9e8"
+      responses:
+        "200":
+          text/plain: "<value>"
+  get_/Ingredients:
+    speakeasy-default-get-/ingredients:
+      responses:
+        "200":
+          text/plain: "<value>"
+  get_/Ingredients/{id}:
+    speakeasy-default-get-/ingredients/{id}:
+      parameters:
+        path:
+          id: "98472dda-37a6-4c5d-aee3-c63cff6b92b6"
+      responses:
+        "200":
+          text/plain: "<value>"
+  get_/Spells:
+    speakeasy-default-get-/spells:
+      responses:
+        "200":
+          text/plain: "<value>"
+  get_/Spells/{id}:
+    speakeasy-default-get-/spells/{id}:
+      parameters:
+        path:
+          id: "3de6e60a-635b-4415-9c48-1530673717bc"
+      responses:
+        "200":
+          text/plain: "<value>"
+  get_/Wizards:
+    speakeasy-default-get-/wizards:
+      responses:
+        "200":
+          text/plain: "<value>"
+  get_/Wizards/{id}:
+    speakeasy-default-get-/wizards/{id}:
+      parameters:
+        path:
+          id: "7069b258-5246-48c9-a45b-d752f9c92410"
+      responses:
+        "200":
+          text/plain: "<value>"
+generatedTests: {}
