@@ -1,19 +1,19 @@
 workflowVersion: 1.0.0
 speakeasyVersion: latest
 sources:
-  WizardWorldApi:
-    inputs:
-      - location: https://wizard-world-api.herokuapp.com/swagger/v1/swagger.json
-    overlays:
-      - location: overlay.yaml
-    output: openapi-combined.yaml
-    registry:
-      location: registry.speakeasyapi.dev/walker/walker/wizard-world-api
+    WizardWorldApi:
+        inputs:
+            - location: https://wizard-world-api.herokuapp.com/swagger/v1/swagger.json
+        overlays:
+            - location: overlay.yaml
+        output: openapi-combined.yaml
+        registry:
+            location: registry.speakeasyapi.dev/walker/walker/wizard-world-api
 targets:
-  wizard-world:
-    target: typescript
-    source: WizardWorldApi
-    codeSamples:
-      registry:
-        location: registry.speakeasyapi.dev/walker/walker/wizard-world-api-typescript-code-samples
-      blocking: false
+    wizard-world:
+        target: typescript
+        source: WizardWorldApi
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/walker/walker/wizard-world-api-typescript-code-samples
+            blocking: false
