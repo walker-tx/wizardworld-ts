@@ -13,6 +13,9 @@ targets:
     wizard-world:
         target: typescript
         source: WizardWorldApi
+        publish:
+            npm:
+                token: $npm_token
         codeSamples:
             registry:
                 location: registry.speakeasyapi.dev/walker/walker/wizard-world-api-typescript-code-samples
